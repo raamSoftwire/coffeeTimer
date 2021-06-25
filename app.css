@@ -1,0 +1,24 @@
+body {
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 85px;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 10px 50px;
+    border-radius: 30px;
+    min-width: 260px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+}
+
+#time {
+    margin-top: 40px;
+    font-size: 85px;
+}

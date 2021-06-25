@@ -12,7 +12,6 @@ function start() {
 function update(t, stirTime) {
   if (t == stirTime) {
     doubleDing();
-    document.getElementById('stir').innerHTML = "STIR";
   }
   document.getElementById('time').innerHTML = formatTime(t);
 }
