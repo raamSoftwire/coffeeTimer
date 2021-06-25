@@ -3,14 +3,14 @@ function start() {
   var fullTime = 9 * 60;
 
   var t = 0;
-  update(t, stirTime)
+  update(t, stirTime, fullTime)
 
-  let timer = setInterval(() => {t++; update(t, stirTime);}, 1000);
+  let timer = setInterval(() => {t++; update(t, stirTime, fullTime);}, 1000);
   setTimeout(() => {clearInterval(timer)}, fullTime * 1000);
 }
 
-function update(t, stirTime) {
-  if (t == stirTime) {
+function update(t, stirTime, fullTime) {
+  if (t == stirTime || t == fullTime) {
     doubleDing();
   }
   document.getElementById('time').innerHTML = formatTime(t);
